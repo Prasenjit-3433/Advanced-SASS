@@ -1,0 +1,20 @@
+{
+  "name": "advanced-sass",
+  "version": "1.0.0",
+  "description": "Learning advanced features of SASS",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch --no-source-map scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prasenjit-3433/Advanced-SASS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prasenjit-3433/Advanced-SASS/issues"
+  },
+  "homepage": "https://github.com/Prasenjit-3433/Advanced-SASS#readme"
+}
