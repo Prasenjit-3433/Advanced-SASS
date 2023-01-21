@@ -1,30 +1,6 @@
-.main-heading {
-  font-weight: 400;
-  line-height: 1.5;
-  font-size: 5px;
-}
-
-.sub-heading {
-  font-family: "Helvetica", Arial, sans-serif;
-  font-weight: bold;
-  font-style: italic;
-}
-
-.sub-heading {
+h2 {
+  box-sizing: border-box;
+  border: 1px solid blue;
   color: red;
-  background-color: #ff0000;
-  border-color: rgba(255, 0, 0, 0.5);
-  outline-color: hsl(0deg, 100%, 50%);
-}
-
-.sub-heading {
-  margin: 10px 30px 15px 19px;
-  font-family: "Raleway", "Dosis", "Lato";
-  border: 3px solid red;
-}
-
-h1 {
-  color: red;
-  background-color: blue;
-  border-color: green;
+  background-color: green;
 }

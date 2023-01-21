@@ -76,5 +76,35 @@ h1 {
 It has two possible values - true or false. It is used with `if` statements.
 
 ### Null ###
-Null is just empty, it has no value at all. so one say, it represents empty state.
-**Note**: It's case sensitive, it should be written as `null` with lowercase.
+Null is just empty, it has no value at all. so one say, it represents empty state. It's case sensitive, it should be written as `null` with lowercase.
+
+## SASS Interpolation
+Interpellation is not unique only to us because you may come across this thing in different programming languages. For example, if you're familiar with template literals in ES6 version of JavaScript, then interpellation is quite similar to it. So what does interpellation mean?
+
+
+In simple words, We're able to create variables and then using interpolation, we can use those variables in either selectors or property names or in their values.
+
+```scss
+$b: "border";
+$c: "color";
+
+h2 {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    color: red;
+    background-color: green;
+}
+```
+This can be re-written as
+```scss
+$b: "border";
+$c: "color";
+
+h2 {
+    box-sizing: #{$b}-box;
+    #{$b}: 1px solid blue;
+    #{$c}: red;
+    background-#{$c}: green;
+}
+```
+

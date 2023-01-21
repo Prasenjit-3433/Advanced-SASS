@@ -1,44 +1,9 @@
-// Number //
-.main-heading {
-    font-weight: 400;
-    line-height: 1.5;
-    font-size: 5px; // rem, em or % 
-}
+$b: "border";
+$c: "color";
 
-// Strings //
-// a string can defined with or without quotes("") like this
-.sub-heading {
-    font-family: 'Helvetica', Arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-}
-
-// Colors //
-.sub-heading {
-    color: red;
-    background-color: #ff0000;
-    border-color: rgba(255, 0, 0, 0.5);
-    outline-color: hsl(0, 100%, 50%);
-}
-
-// Lists //
-// a list is like an array and can store multiple values. The values are itself another data-types and separated by space or commas.
-
-.sub-heading {
-    margin: 10px 30px 15px 19px;
-    font-family: 'Raleway', 'Dosis', 'Lato';
-    border: 3px solid red;
-}
-
-// Map //
-$colors: (
-    1: red,
-    green: green,
-    "blue": blue
-);
-
-h1 {
-    color: map-get($colors, 1);
-    background-color: map-get($colors, "blue");
-    border-color: map-get($colors, green);
+h2 {
+    box-sizing: #{$b}-box;
+    #{$b}: 1px solid blue;
+    #{$c}: red;
+    background-#{$c}: green;
 }
