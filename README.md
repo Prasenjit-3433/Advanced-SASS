@@ -109,7 +109,7 @@ h2 {
 ```
 
 ## 📝 For Loop
-Consider, we have 4 paragraphs with 4 different classes.
+Consider 4 paragraphs with 4 different classes.
 
 ```html
     <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
@@ -118,9 +118,21 @@ Consider, we have 4 paragraphs with 4 different classes.
     <p class="paragraph-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
 ```
 
-In order to assign them color in `css`, we have to select them individually. But in `sass`, we can do it more conside and effecient way.
+In order to assign them background-color in `css`, we have to select them individually. But in `sass`, we can do it more conside and effecient way.
 
 This can be re-written using `for` loop:
+
+First define a `map` that holds all the necessary colors.
+
+```scss
+    $colors: (
+        1: red,
+        2: green,
+        3: blue,
+        4: orange
+    );
+```
+Then using `for loop`, iterate over that map to access different colors.
 
 ```scss
     $colors: (
@@ -136,7 +148,7 @@ This can be re-written using `for` loop:
         }
     }
 ```
-Or in this way:
+Or in this way using `to` instead of `through`:
 
 ```scss
     $colors: (
@@ -154,3 +166,35 @@ Or in this way:
 ```
 
 The only difference between `through` & `to` is that the end value is not included in case of `to`.
+
+## 📝 Each Loop
+When one wants to interate over a list, then in that case `each` loop will be a perfect choice.
+
+Consider 4 paragraphs with 4 different classes.
+
+```html
+    <p class="paragraph-red">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-green">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-blue">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-orange">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+```
+In order to assign them background-color in `css`, we have to select them individually. But in `sass`, we can do it more conside and effecient way.
+
+This can be re-written using `each` loop:
+
+First define a `list` that holds all the necessary colors.
+
+```scss
+    $colors: red green blue orange;
+```
+Then using `each loop`, iterate over that list to access different colors.
+
+```scss
+    $colors: red green blue orange;
+
+    @each $color in $colors {
+        .paragraph-#{$color} {
+            background-color: $color;
+        }
+    }
+```
