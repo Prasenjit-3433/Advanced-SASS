@@ -2,7 +2,7 @@
 Learning advanced features of SASS
 
 <details>
-  <summary>SASS Data Types - 1</summary>
+  <summary>SASS Data Types</summary>
   In SASS, there are total 7 data types -> Numbers, Strings, Colors, Lists, Maps, Booleans, Null.
 
   ### Numbers ###
@@ -16,9 +16,9 @@ Learning advanced features of SASS
     }
   ```
   ### Strings ###
-  a string can defined with or without quotes("") like this
+  a string can defined with or without quotes("").
 
-    ```scss
+  ```scss
     .sub-heading {
         font-family: 'Helvetica', Arial, sans-serif;
         font-weight: bold;
@@ -27,7 +27,7 @@ Learning advanced features of SASS
   ```
   ### Colors ###
 
-      ```scss
+  ```scss
     .sub-heading {
         font-family: 'Helvetica', Arial, sans-serif;
         font-weight: bold;
@@ -36,7 +36,7 @@ Learning advanced features of SASS
   ```
   ### Colors ###
 
-      ```scss
+  ```scss
     .sub-heading {
         color: red;
         background-color: #ff0000;
@@ -45,38 +45,13 @@ Learning advanced features of SASS
     }
   ```
   ### Lists ###
-    a list is like an array and can store multiple values. The values are itself another data-types and separated by space or commas.
+  a list is like an array and can store multiple values. The values are itself another data-types and separated by space or commas.
 
-    ```scss
+  ```scss
     .sub-heading {
         margin: 10px 30px 15px 19px;
         font-family: 'Raleway', 'Dosis', 'Lato';
         border: 3px solid red;
-    }
-    ```
-    
-    ###  ###
-      ```scss
-    .sub-heading {
-        
-    }
-  ```
-    ###  ###
-      ```scss
-    .sub-heading {
-        
-    }
-  ```
-    ###  ###
-      ```scss
-    .sub-heading {
-        
-    }
-  ```
-    ###  ###
-      ```scss
-    .sub-heading {
-        
     }
   ```
 </details>
