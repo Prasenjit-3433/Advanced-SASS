@@ -1,7 +1,7 @@
 # Advanced-SASS
 Learning advanced features of SASS
 
-## SASS Data Types
+## 📝 SASS Data Types
   In SASS, there are total 7 data types -> Numbers, Strings, Colors, Lists, Maps, Booleans, Null.
 
 ### Numbers ###
@@ -78,7 +78,7 @@ It has two possible values - true or false. It is used with `if` statements.
 ### Null ###
 Null is just empty, it has no value at all. so one say, it represents empty state. It's case sensitive, it should be written as `null` with lowercase.
 
-## SASS Interpolation
+## 📝 SASS Interpolation
 Interpellation is not unique only to us because you may come across this thing in different programming languages. For example, if you're familiar with template literals in ES6 version of JavaScript, then interpellation is quite similar to it. So what does interpellation mean?
 
 
@@ -108,3 +108,49 @@ h2 {
 }
 ```
 
+## 📝 For Loop
+Consider, we have 4 paragraphs with 4 different classes.
+
+```html
+    <p class="paragraph-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+    <p class="paragraph-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, quibusdam?</p>
+```
+
+In order to assign them color in `css`, we have to select them individually. But in `sass`, we can do it more conside and effecient way.
+
+This can be re-written using `for` loop:
+
+```scss
+    $colors: (
+        1: red,
+        2: green,
+        3: blue,
+        4: orange
+    );
+
+    @for $i from 1 through 4 {
+        .paragraph-#{$i} {
+            background-color: map-get($colors, $i);
+        }
+    }
+```
+Or in this way:
+
+```scss
+    $colors: (
+        1: red,
+        2: green,
+        3: blue,
+        4: orange
+    );
+
+    @for $i from 1 to 5 {
+        .paragraph-#{$i} {
+            background-color: map-get($colors, $i);
+        }
+    }
+```
+
+The only difference between `through` & `to` is that the end value is not included in case of `to`.
