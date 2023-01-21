@@ -1,15 +1,3 @@
-.paragraph-red {
-  background-color: red;
-}
-
-.paragraph-green {
-  background-color: green;
-}
-
-.paragraph-blue {
-  background-color: blue;
-}
-
-.paragraph-orange {
-  background-color: orange;
+h1 {
+  font-size: 30px;
 }

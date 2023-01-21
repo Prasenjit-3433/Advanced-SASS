@@ -198,3 +198,29 @@ Then using `each loop`, iterate over that list to access different colors.
         }
     }
 ```
+
+## 📝 If Directive
+In sass, `if` directive works very similar to `if condition` in programing language.
+
+Consider a heading element with some text
+```html
+    <h1>If Directive</h1>
+```
+
+Now let's create a `mixin` and use it depending on different situations using `if` directive.
+
+```scss
+    @mixin headingSize($size) {
+        @if($size == large) {
+            font-size: 50px;
+        } @else if ($size == medium) {
+            font-size: 30px;
+        } @else {
+            font-size: 15px;
+        }
+    }
+
+    h1 {
+        @include headingSize(medium);
+    }
+```

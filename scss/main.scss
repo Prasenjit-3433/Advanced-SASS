@@ -1,7 +1,13 @@
-$colors: red green blue orange;
-
-@each $color in $colors {
-    .paragraph-#{$color} {
-        background-color: $color;
+@mixin headingSize($size) {
+    @if($size == large) {
+        font-size: 50px;
+    } @else if ($size == medium) {
+        font-size: 30px;
+    } @else {
+        font-size: 15px;
     }
+}
+
+h1 {
+    @include headingSize(medium);
 }
