@@ -22,3 +22,9 @@
   font-family: "Raleway", "Dosis", "Lato";
   border: 3px solid red;
 }
+
+h1 {
+  color: red;
+  background-color: blue;
+  border-color: green;
+}

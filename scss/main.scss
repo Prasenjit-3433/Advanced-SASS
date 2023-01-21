@@ -29,3 +29,16 @@
     font-family: 'Raleway', 'Dosis', 'Lato';
     border: 3px solid red;
 }
+
+// Map //
+$colors: (
+    1: red,
+    green: green,
+    "blue": blue
+);
+
+h1 {
+    color: map-get($colors, 1);
+    background-color: map-get($colors, "blue");
+    border-color: map-get($colors, green);
+}
